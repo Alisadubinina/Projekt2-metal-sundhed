@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt os</title>
+    <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/cff72e75fb.js" crossorigin="anonymous"></script>
+<script src="js/navigation.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="kontakt-side">
+
+
+<header>
+
+
+<!--navigationslogo-->
+        <div class="logo-wrapper">
+        <img src="img/logo.svg" class="logo">
+        <span class="company-name">ModLyset</span> <!--angiver navnet for websiden ved siden af logoet-->
+
+        </div>
+<nav>
+        <ul>
+            <li><a href="index.html"></a></li> <!--kan bruges nar man skal tage noget fra fontawesome fx hamburger-->
+            <li><a href="#">Om os</a></li>
+            <li><a href="#">Find support nu</a></li>
+            <li><a href="#">Se test og guids</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+
+
+<!--navigations burger--> 
+    </nav>
+    <button id="bars">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <hr>
+   
+</div>
+
+
+<!-- KONTAKTFORM -->
+<main class="kontaktform">
+		<h1>Kontakt os</h1>
+        <p class="kontakt-tekst">Skriv til os via kontaktformularen og så vender vi tilbage til dig</p>
+	
+		<form>
+			<label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
+			<input id="navn" type="text" required>
+			
+			<label for="adresse">Adresse</label><!--class="visually-hidden" kan bruges når man ønsker at bruge placeholder i input istedet for label, men stadig ønsker at have en tilgængelig mulighed som kan læses af en skærmlæser-->
+			<input id="adresse" type="text">
+			
+			<label for="telefon">Telefonnummer</label>
+			<input id="telefon" type="tel">
+			
+			<label for="mail">E-mail</label>
+			<input id="mail" type="email" required>
+
+			<div class="custom-select">
+				<label for="region">Region</label>
+				<select id="region" name="select">
+					<option value="0" selected disabled>Vælg region</option> <!--Denne gør at der ikke autovælges en region for brugeren-->
+					<option value="1">Syddanmark</option>
+					<option value="2">Sjælland</option>
+					<option value="3">Hovedstaden</option>
+					<option value="4">Nordjylland</option>
+					<option value="5">Midtjylland</option>
+				</select>
+			</div>
+
+			<fieldset class="checkbox"> <!--Checkbox giver muligheden for at vælge flere 'services' på en gang. -->
+				<legend>Hvad ønsker du at have hjælp til?</legend>
+				<div>
+					<input type="checkbox" name="services" id="Support" value="Support">
+					<label for="Support">Support</label>
+				</div>
+					
+				<div>
+					<input type="checkbox" name="services" id="Selvtest" value="Selvtest">
+					<label for="Selvtest">Selvtest</label>
+				</div>
+					
+				<div>
+					<input type="checkbox" name="services" id="Tips og guides" value="Tips og guids">
+					<label for="Tips og guids">Tips og guids</label>
+				</div>
+					
+			
+			</fieldset>
+				
+			<label for="besked">Besked</label>
+			<textarea name="besked" id="besked" rows="8" cols="60"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->	
+				
+			<fieldset> <!-- <fieldset> grupperer relaterede elementer i en form. Den tilføjer endvidere en streg rundt om de relaterede elementer. <legend> definere en titel/caption for en fieldsetgruppe-->
+				<legend>Må vi kontakte dig på din telefon?</legend>
+				<!--radiobutton skal have samme 'name' for at der kun kan vælges en knap og denne kan ses som værende en gruppe-->
+				<input id="ja" type="radio" value="ja" name="kontaktes">
+				<label for="ja">Ja</label>
+				
+				<input id="nej" type="radio" value="nej" name="kontaktes">
+				<label for="nej">Nej</label>
+			</fieldset>
+				
+			<input type="submit" name="submit" value="Send">
+		
+		</form>
+	</main>
+</body>
+</html>
+
+
+<!--Footer-->
+
+<footer class="footer"> 
+
+    <hr>
+
+    <div class="footer-row"> <!--container til de forskelige rækker i footern-->
+
+        <div class="left-footer"> <!--bruges til første informationer i footern-->
+            <h4>Om ModLyset</h4>
+            <p>Om os</p>
+            <p>Kontakt</p>
+        </div>
+
+        <div class="right-footer"> <!--bruges til sækunder informationer i footern-->
+            <h4>Genvej</h4>
+            <p>Om os</p>
+            <p>Support</p>
+            <p>Tests og Guides</p>
+        </div>
+
+    </div>
+
+    <div class="footer-middle"> <!--bruges til fx logo, sociale medie ikoner og webnavn-->
+        <img src="img/logo.svg" alt="logo" class="footer-icon">
+        <p class="footer-brand">ModLyset.dk</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="bottom-footer"> <!--bruges nedrest i footer-->
+        <p>Lavet med ❤️ af ModLyset.dk</p>
+    </div>
+
+</footer>
+
+        
+
+</body>
+</body>
+</html>
+
+
+
+</body>
+</html>
